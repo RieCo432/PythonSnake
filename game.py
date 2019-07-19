@@ -7,11 +7,11 @@ from datetime import datetime
 import os
 
 window_x, window_y = 5, 32
-width, height = 1320, 680
+width, height = 1500, 800
 
 cellSize = 20
 
-moves_per_second = 10
+moves_per_second = 25
 
 os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (window_x, window_y)
 pygame.init()
@@ -143,6 +143,7 @@ def show_score(score):
                 screen.fill(0)
                 start_game()
         time.sleep(0.001)
+
 
 start_game()
 
